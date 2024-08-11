@@ -1,0 +1,35 @@
+[debug] [2024-08-11T12:05:43.922Z] ----------------------------------------------------------------------
+[debug] [2024-08-11T12:05:43.925Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\curtl\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-08-11T12:05:43.926Z] CLI Version:   13.15.1
+[debug] [2024-08-11T12:05:43.926Z] Platform:      win32
+[debug] [2024-08-11T12:05:43.926Z] Node Version:  v20.16.0
+[debug] [2024-08-11T12:05:43.926Z] Time:          Sun Aug 11 2024 20:05:43 GMT+0800 (Singapore Standard Time)
+[debug] [2024-08-11T12:05:43.926Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-11T12:05:43.997Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-11T12:05:43.997Z] > authorizing via signed-in user (curtlow10@gmail.com)
+[debug] [2024-08-11T12:05:43.997Z] [iam] checking project ar-beef-cooking-game for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-11T12:05:43.999Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ar-beef-cooking-game:testIamPermissions [none]
+[debug] [2024-08-11T12:05:44.000Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ar-beef-cooking-game:testIamPermissions x-goog-quota-user=projects/ar-beef-cooking-game
+[debug] [2024-08-11T12:05:44.000Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ar-beef-cooking-game:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-11T12:05:45.106Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ar-beef-cooking-game:testIamPermissions 200
+[debug] [2024-08-11T12:05:45.106Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ar-beef-cooking-game:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-11T12:05:45.107Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ar-beef-cooking-game [none]
+[debug] [2024-08-11T12:05:45.595Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ar-beef-cooking-game 200
+[debug] [2024-08-11T12:05:45.596Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ar-beef-cooking-game {"projectId":"ar-beef-cooking-game","projectNumber":"181264105233","displayName":"AR-Beef-Cooking-Game","name":"projects/ar-beef-cooking-game","resources":{"hostingSite":"ar-beef-cooking-game"},"state":"ACTIVE","etag":"1_94441957-13d6-46a2-9565-31af52c24aba"}
+[info] 
+[info] === Deploying to 'ar-beef-cooking-game'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-08-11T12:05:45.602Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ar-beef-cooking-game/versions [none]
+[debug] [2024-08-11T12:05:45.602Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ar-beef-cooking-game/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-08-11T12:05:46.870Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ar-beef-cooking-game/versions 200
+[debug] [2024-08-11T12:05:46.870Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ar-beef-cooking-game/versions {"name":"projects/181264105233/sites/ar-beef-cooking-game/versions/1b31874af937010d","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[ar-beef-cooking-game]: beginning deploy... 
+[info] i  hosting[ar-beef-cooking-game]: found 107564 files in . 
+[debug] [2024-08-11T12:07:08.529Z] [hosting] uploading with 200 concurrency
+[debug] [2024-08-11T12:07:08.529Z] [hosting] hash cache [] not populated
+[debug] [2024-08-11T12:07:51.520Z] Error: EBUSY: resource busy or locked, open 'D:\Unity project\Wa-En-AR\Temp\UnityLockfile'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-11T12:07:51.749Z] Error: EBUSY: resource busy or locked, open 'D:\Unity project\Wa-En-AR\Temp\FSTimeGet-c71056b8988a0a44190c8c7ccf5ee2ff'
